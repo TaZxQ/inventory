@@ -25,16 +25,21 @@ SECRET_KEY = '!&uck1a9k%iane#bg@%+qhj@waxuv#bk4yjb)d*ub+&)wp^wec'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'user.UserAccount'
 # Application definition
 
 INSTALLED_APPS = [
+    'miniproject.user',
+    'miniproject.item',
+    'miniproject.batch',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -46,6 +51,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
 ROOT_URLCONF = 'miniproject.urls'
 
@@ -73,10 +87,10 @@ WSGI_APPLICATION = 'miniproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'inventory',
+        'NAME': 'mini-inventory',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'PASSWORD': 'TSkF99wuK1bwXniRSvDr',
+        'HOST': 'inventory.crlfw9q76roh.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
