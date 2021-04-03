@@ -3,6 +3,8 @@ from rest_framework import serializers
 from django.contrib.auth.hashers import make_password
 from sendgrid import Mail, Cc, SendGridAPIClient
 
+sender_email = 'mian.waqashafiz@gmail.com'
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,10 +18,11 @@ class UserSerializer(serializers.ModelSerializer):
         # sendgrid API integration to send the managers their password on sign up
 
         message = Mail(
-            from_email=('mian.waqashafiz@gmail.com', 'mini inventory'),
-            to_emails='mian.waqashafiz@gmail.com',
-            subject='Sending with Twilio SendGrid is Fun',
+            from_email=(sender_email, 'mini inventory'),
+            to_emails=validated_data['email'],
+            subject='Inventory New Manager Sign Up',
             html_content=f'<strong>Your password is {random_password}</strong>')
+
         try:
             sg = SendGridAPIClient('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')
             response = sg.send(message)
