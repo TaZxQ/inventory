@@ -24,7 +24,7 @@ SECRET_KEY = '!&uck1a9k%iane#bg@%+qhj@waxuv#bk4yjb)d*ub+&)wp^wec'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 AUTH_USER_MODEL = 'user.UserAccount'
 # Application definition
 

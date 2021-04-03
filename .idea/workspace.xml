@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00fd124e-3da7-4dee-9000-9e0ef569f9ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniproject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617389661070</updated>
-      <workItem from="1617389662925" duration="18103000" />
+      <workItem from="1617389662925" duration="18679000" />
     </task>
     <task id="LOCAL-00001" summary="write migrate and migrattions bash files">
       <created>1617437816419</created>
@@ -248,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617450452978</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="requirements.txt">
+      <created>1617473507793</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617473507793</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,17 +272,18 @@
     <MESSAGE value="done with item module" />
     <MESSAGE value="readme and requirements.txt" />
     <MESSAGE value="user model, manager and migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="user model, manager and migrations" />
+    <MESSAGE value="requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="325" y="185" width="947" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617441448035">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="325" y="185" width="947" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617441448035" />
-    <state x="313" y="57" key="CommitChangelistDialog2" timestamp="1617450452775">
+    <state x="313" y="57" key="CommitChangelistDialog2" timestamp="1617473507572">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="313" y="57" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617450452775" />
+    <state x="313" y="57" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1617473507572" />
     <state x="577" y="229" key="FileChooserDialogImpl" timestamp="1617433166882">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
