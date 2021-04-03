@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="miniinventory" uuid="527870d3-5121-4101-a9a9-e12e4d7d55a0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://inventory.crlfw9q76roh.us-east-1.rds.amazonaws.com:5432/mini-inventory</jdbc-url>
+    </data-source>
+  </component>
+</project>
